@@ -1208,7 +1208,7 @@ footer a:hover {
 
 .post-content {
 	background: var(--black);
-	margin: 0 auto;
+	margin: 0 auto 25dvh;
 	padding: 0 20vw 200px;
 	position: relative;
 	width: 100vw;
