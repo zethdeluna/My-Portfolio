@@ -79,6 +79,10 @@ export function Hero({
 			});
 
 			tl
+				.to('[data-letter]', {
+					duration: 0,
+					translateY: '-50%'
+				})
 				.to('[data-letter="z"]', {
 					delay: 1,
 					duration: 0.15,
