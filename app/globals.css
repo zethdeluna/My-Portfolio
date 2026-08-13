@@ -429,10 +429,11 @@ footer a:hover {
 	left: 0;
 	overflow: hidden;
 	position: absolute;
-	scale: 1 0;
+	/* scale: 1 0; */
 	top: 50%;
 	/* transition: height 0.5s ease, translate 0.5s ease; */
-	translate: calc(50vw  - (345 / 2 * 1px)) -50%;
+	/* translate: calc(50vw  - (345 / 2 * 1px)) -50%; */
+	transform: scaleY(0) translateX(calc(50vw  - (345 / 2 * 1px)));
 	/* width: 345px; */
 	width: 84px;
 	--pseudo-height: calc(130 / 1440 * 100vw);
@@ -450,15 +451,18 @@ footer a:hover {
 }
 
 .name [data-letter="e"] {
-	translate: calc(50vw  - (345 / 2 * 1px) + 3px + 84px) -50%;
+	/* translate: calc(50vw  - (345 / 2 * 1px) + 3px + 84px) -50%; */
+	transform: scaleY(0) translateX(calc(50vw  - (345 / 2 * 1px) + 3px + 84px));
 }
 
 .name [data-letter="t"] {
-	translate: calc(50vw  - (345 / 2 * 1px) + 6px + 168px) -50%;
+	/* translate: calc(50vw  - (345 / 2 * 1px) + 6px + 168px) -50%; */
+	transform: scaleY(0) translateX(calc(50vw  - (345 / 2 * 1px) + 6px + 168px));
 }
 
 .name [data-letter="h"] {
-	translate: calc(50vw  - (345 / 2 * 1px) + 9px + 252px) -50%;
+	/* translate: calc(50vw  - (345 / 2 * 1px) + 9px + 252px) -50%; */
+	transform: scaleY(0) translateX(calc(50vw  - (345 / 2 * 1px) + 9px + 252px));
 }
 
 .name [data-letter]:before,
