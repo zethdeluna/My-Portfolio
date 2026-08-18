@@ -4,12 +4,14 @@ interface FWMProps {
 	mediaType: 'image' | 'video';
 	src: string;
 	alt?: string;
+	caption?: string;
 }
 
 export function FullWidthMedia({
 	mediaType,
 	src,
-	alt
+	alt,
+	caption
 }: FWMProps) {
 
 	return (
@@ -20,6 +22,7 @@ export function FullWidthMedia({
 					: <video autoPlay loop muted><source src={src} type="video/mp4"/>Your browser does not support the video tag.</video>
 				}
 			</div>
+			{caption && <span className="caption">{caption}</span>}
 		</div>
 	);
 

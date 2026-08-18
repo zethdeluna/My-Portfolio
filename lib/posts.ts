@@ -11,8 +11,11 @@ export interface PostMeta {
 	description: string;
 	coverImage?: string;
 	heroImage?: string;
-	demoUrl: string;
-	repoUrl: string;
+	liveUrl: string;
+	repoUrl?: string;
+	note?: string;
+	customLinkTitle?: string;
+	customLinkUrl?: string;
 }
 
 export function getAllPosts(): PostMeta[] {

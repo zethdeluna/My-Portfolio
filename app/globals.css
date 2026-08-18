@@ -1020,7 +1020,7 @@ footer a:hover {
 	color: var(--cream);
 	font-size: 48px;
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 0.6px;
 	line-height: 1;
 	z-index: 1;
 }
@@ -1208,6 +1208,14 @@ footer a:hover {
 	margin-left: 0;
 }
 
+.post-hero .note {
+	color: var(--cream);
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	margin: 14px 0 0;
+}
+
 /* Content */
 
 .post-content {
@@ -1246,16 +1254,21 @@ footer a:hover {
 }
 
 .post-content p + h3,
-.post-content ul + h3 {
+.post-content ul + h3,
+.post-content .note + h3 {
 	margin-top: 64px;
 }
 
-.post-content p,
+.post-content > p,
 .post-content ol,
 .post-content ul,
 .post-content pre {
 	font-size: 18px;
 	margin: 0 0 24px;
+}
+
+.post-content li p + ul {
+	margin-top: 16px;
 }
 
 .post-content ol,
@@ -1302,7 +1315,8 @@ footer a:hover {
 	margin-top: 8px;
 }
 
-.post-content ol > li + li {
+/* .post-content ol > li + li, */
+.post-content li:has(li) + li {
 	margin-top: 28px;
 }
 
@@ -1317,6 +1331,12 @@ footer a:hover {
 
 .post-content h3 + .eyebrow {
 	margin-top: 32px;
+}
+
+.post-content .note,
+.full-width-media .caption {
+	font-size: 14px;
+	font-style: italic;
 }
 
 .post-content :last-child {
@@ -1379,6 +1399,7 @@ footer a:hover {
 
 .full-width-media {
 	display: flex;
+	flex-direction: column;
 	margin: 120px auto;
 	width: 100%;
 }
@@ -1406,6 +1427,12 @@ footer a:hover {
 	height: auto;
 	object-fit: contain;
 	width: 100%;
+}
+
+.full-width-media .caption {
+	color: var(--cream);
+	display: block;
+	margin-top: 12px;
 }
 
 /* Two Column Media */

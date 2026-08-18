@@ -28,10 +28,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 				<PostHero 
 					title={meta.title} 
 					date={meta.date} 
-					demoUrl={meta.demoUrl} 
+					liveUrl={meta.liveUrl} 
 					repoUrl={meta.repoUrl} 
 					coverImage={meta.coverImage} 
 					heroImage={meta.heroImage} 
+					note={meta?.note}
+					customLinkTitle={meta?.customLinkTitle}
+					customLinkUrl={meta?.customLinkUrl}
 				/>
 				<PostContent>
 					<MDXRemote 
@@ -39,8 +42,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 						components={components}
 					/>
 					<div className="links">
-						{meta.demoUrl && <a href={meta.demoUrl} target="_blank">Demo</a>}
+						{meta.liveUrl && <a href={meta.liveUrl} target="_blank">See</a>}
 						{meta.repoUrl && <a href={meta.repoUrl} target="_blank">Repo</a>}
+						{meta.customLinkTitle && meta.customLinkUrl && <a href={meta.customLinkUrl} target="_blank">{meta.customLinkTitle}</a>}
 					</div>
 				</PostContent>
 				<GetInTouch />

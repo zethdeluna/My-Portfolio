@@ -105,8 +105,8 @@ export function Body({ posts }: { posts: PostMeta[] }) {
 							</article>
 							<div className="links">
 								<TransitionLink className="story" href={`/work/${project.slug}`} link="1">Story</TransitionLink>
-								<a data-link="2" href={project.demoUrl} target="_blank">Demo</a>
-								<a data-link="3" href={project.repoUrl} target="_blank">Repo</a>
+								<a data-link="2" href={project.liveUrl} target="_blank">See</a>
+								{project.repoUrl && <a data-link="3" href={project.repoUrl} target="_blank">Repo</a>}
 							</div>
 							<span className="divider" />
 						</li>

@@ -10,19 +10,24 @@ gsap.registerPlugin(useGSAP);
 interface PostHeroProps {
 	title: string;
 	date: string;
-	demoUrl?: string;
+	liveUrl?: string;
 	repoUrl?: string;
 	coverImage?: string;
 	heroImage?: string;
+	note?: string;
+	customLinkTitle?: string;
+	customLinkUrl?: string;
 }
 
 export function PostHero({
 	title,
 	date,
-	demoUrl,
+	liveUrl,
 	repoUrl,
-	coverImage,
-	heroImage
+	heroImage,
+	note,
+	customLinkTitle,
+	customLinkUrl
 }: PostHeroProps) {
 
 	const heroRef = useRef<HTMLDivElement>(null);
@@ -54,9 +59,11 @@ export function PostHero({
 				<h1>{title}</h1>
 				<div className="sub-title">
 					<time>{date}</time>
-					{demoUrl && <a href={demoUrl} target="_blank">Demo</a>}
+					{liveUrl && <a href={liveUrl} target="_blank">See</a>}
 					{repoUrl && <a href={repoUrl} target="_blank">Repo</a>}
+					{customLinkTitle && customLinkUrl && <a href={customLinkUrl} target="_blank">{customLinkTitle}</a>}
 				</div>
+				{note && <span className="note">{note}</span>}
 			</div>
 			{heroImage && <FullWidthMedia mediaType="image" src={heroImage} />}
 		</div>

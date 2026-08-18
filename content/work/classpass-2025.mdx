@@ -1,0 +1,56 @@
+---
+title: "ClassPass Best of 2025"
+date: "January 2026"
+description: "Landing page. Vanilla JS + CSS animations. Custom WordPress CMS."
+coverImage: "/images/classpass-2025/thumbnail.png"
+heroImage: "/images/classpass-2025/desktop.png"
+liveUrl: "https://classpass.com/blog/best-of-classpass-2025/"
+note: "*This work is owned by Studio Simpatico. Development owned by me."
+customLinkTitle: "Studio Simpatico"
+customLinkUrl: "https://studiosimpati.co/"
+---
+
+<h3>The Overview</h3>
+
+If you haven't heard of ClassPass yet, it's an <em>amazing</em> health and wellness platform that let's you explore a variety of workouts (like yoga, pilates, boxing, etc.), self-care treats (like massages, saunas, and manicures), and even food — all under one monthly subscription and no commitments to a single gym or studio.
+
+This project landed on my desk while I was on the team at Studio Simpatico, where we had an ongoing partnership with Playlist (ClassPass' parent company) to handle the development and maintenance of their online marketing platform for ClassPass. This time around, I was given the opportunity to own the frontend development of their "Best of 2025" landing page, working with their team of in-house designers to deliver a pixel-perfect product highlighting the year's top ClassPass partners.
+
+<span className="eyebrow">Objectives</span>
+
+There were two main goals for this project:
+
+1. Create an engaging, interactive, and visually exciting experience for users.
+2. Setup a content management system that is intuitive and simple to make content editing a breeze for the ClassPass marketing team.
+
+We'll get more into those later.
+
+<span className="eyebrow">Technologies</span>
+
+This project was built on top of <strong>WordPress</strong>, with content-specific custom fields created with <strong>ACF Pro</strong>. <strong>PHP</strong>, <strong>HTML</strong>, and <strong>CSS</strong> were used to build and style the frontend, and plain <strong>Vanilla JavaScript</strong> was used to handle animations.
+
+The ClassPass team sent over a <strong>Figma</strong> design/specs, which I used to ensure a pixel-perfect implementation of their vision.
+
+<h3>The Breakdown</h3>
+
+Giving credit to the design team, the first goal listed above is heavily carried by the design itself. On my end, what it came down to was creating smooth hover and scroll-based animations. The key decisions here revolved around how to implement this while keeping performance and responsive design in mind. 
+
+I decided that the simple yet visually effective animations could be achieved with plain JavaScript — this kept the project lightweight and avoided any unnecessary bloat from animation libraries. Scroll-based animations were kept smooth and performant using JavaScript's built-in requestAnimationFrame() method, which encapsulated scroll position tracking, animation triggers, and element transformations.
+
+<FullWidthMedia mediaType="video" src="/videos/classpass-2025-demo.mp4" caption="Source: https://classpass.com/blog/best-of-classpass-2025/" />
+
+As I mentioned earlier, this project was built on top of WordPress, which makes database management and backend infrastructure incredibly easy to work with. And, as a frontend engineer, that let's me put more energy into both the user experience and the editor experience.
+
+When it comes to the editor's experience, I'm talking about who this product is being handed off to — the person that will own this product when development is complete. I think about things like, "how easy would the backend be to navigate and use for a non-technical person?" or "do these custom fields feel cluttered or easily manageable?". 
+
+In this project, since the content has a repeating structure, it made sense to implement a "flexible builder" — which allows the client to not only add as many sections as they need, but also keeps the CMS organized and clear. To implement this I utilized ACF Pro (a popular WordPress plugin built to easily create custom fields).
+
+The results: a smooth, engaging, and performant frontend experience for users, and a custom easy-to-manage backend experience for the client.
+
+<h3>The Retro</h3>
+
+This project was a fun exercise with scroll tracking, JS/CSS animations, and backend architecture. After shipping this, I definitely felt more confident in my ability to visualize what my code was doing as I was coding it (something scroll tracking almost forces you to do), and I felt more confident in my ability to design a backend experience for in-house users. On a personal level, I've found that creating these interactive, fun experiences is something I truly enjoy.
+
+It was a real pleasure partnering with Playlist on this — shoutout to their team for providing such a fun design to work with! I'm definitely looking forward to building more experiences like this with whoever I get to partner with next.
+
+Thanks for reading all the way through — have a good one!
