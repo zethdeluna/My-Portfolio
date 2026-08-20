@@ -1619,23 +1619,27 @@ footer a:hover {
 
 	.name [data-letter] {
 		/* scale: 1 1; */
-		translate: 0 -50%;
+		/* translate: 0 -50%; */
 		width: calc((100vw - 40px) / 4);
 		--pseudo-height: calc(34 / 375 * 100vw);
 		--pseudo-left: 0;
 		--pseudo-width: 100%;
 	}
 
+	.name [data-letter="z"] {
+		transform: scaleY(0) translateX(0);
+	}
+
 	.name [data-letter="e"] {
-		translate: calc(((100vw - 40px) / 4) + 8px) -50%;
+		transform: scaleY(0) translateX(calc(((100vw - 40px) / 4) + 8px));
 	}
 
 	.name [data-letter="t"] {
-		translate: calc((2 * (100vw - 40px) / 4) + 16px) -50%;
+		translate: scaleY(0) translateX(calc((2 * ((100vw - 40px) / 4)) + 16px));
 	}
 
 	.name [data-letter="h"] {
-		translate: calc((3 * (100vw - 40px) / 4) + 24px) -50%;
+		translate: scaleY(0) translateX(calc((3 * ((100vw - 40px) / 4)) + 24px));
 	}
 
 	.name [data-letter]:before,

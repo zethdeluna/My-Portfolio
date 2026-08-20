@@ -66,6 +66,8 @@ export function Hero({
 
 			// }
 
+			console.log(2 * (width  + padding));
+
 			const pseudoHeight = isMobile
 				? 'calc(20 / 375 * 100vw)'
 				: 'calc(100 / 1440 * 100vw)'
