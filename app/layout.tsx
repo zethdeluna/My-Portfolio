@@ -16,17 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Zeth's Portfolio",
 	description: "Zeth's Portfolio",
+	metadataBase: new URL("https://www.zethdeluna.com"),
 	openGraph: {
 		title: "Zeth's Portfolio",
 		url: "https://www.zethdeluna.com/",
-		images: [
-			{
-				url: "./opengraph-image.jpg",
-				width: 1200,
-				height: 630,
-				alt: "Zeth's cover image"
-			}
-		],
 		locale: 'en_US',
 		type: 'website'
 	}
